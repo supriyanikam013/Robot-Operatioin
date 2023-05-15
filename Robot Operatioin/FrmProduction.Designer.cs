@@ -219,7 +219,7 @@ namespace Robot_Operatioin
             this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(1215, 135);
+            this.button19.Location = new System.Drawing.Point(1215, 133);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(63, 64);
             this.button19.TabIndex = 581;
@@ -255,7 +255,7 @@ namespace Robot_Operatioin
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(3, 136);
+            this.button10.Location = new System.Drawing.Point(3, 132);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(63, 64);
             this.button10.TabIndex = 580;
