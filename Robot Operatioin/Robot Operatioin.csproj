@@ -52,6 +52,12 @@
     <Compile Include="BusinessLogic\BusinessLogic\DataAccessLayer.cs" />
     <Compile Include="BusinessLogic\BusinessLogic\InputValidation.cs" />
     <Compile Include="BusinessLogic\BusinessLogic\SetupConfiguration.cs" />
+    <Compile Include="frmBrushTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrushTable.Designer.cs">
+      <DependentUpon>frmBrushTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProduction.cs">
       <SubType>Form</SubType>
     </Compile>
