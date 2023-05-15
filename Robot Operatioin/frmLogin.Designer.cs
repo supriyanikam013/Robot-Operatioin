@@ -51,8 +51,8 @@
             this.main_panel.Controls.Add(this.txtusername);
             this.main_panel.Controls.Add(this.lblUsernm);
             this.main_panel.Controls.Add(this.label3);
-            this.main_panel.Location = new System.Drawing.Point(354, 46);
-            this.main_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.main_panel.Location = new System.Drawing.Point(693, 212);
+            this.main_panel.Margin = new System.Windows.Forms.Padding(4);
             this.main_panel.Name = "main_panel";
             this.main_panel.Padding = new System.Windows.Forms.Padding(53, 49, 53, 49);
             this.main_panel.Size = new System.Drawing.Size(441, 462);
@@ -125,7 +125,7 @@
             this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.ForeColor = System.Drawing.Color.White;
             this.txtpassword.Location = new System.Drawing.Point(53, 248);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassword.MaxLength = 15;
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.PasswordChar = '*';
@@ -155,7 +155,7 @@
             this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusername.ForeColor = System.Drawing.Color.White;
             this.txtusername.Location = new System.Drawing.Point(53, 154);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtusername.Margin = new System.Windows.Forms.Padding(4);
             this.txtusername.MaxLength = 15;
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(335, 34);
@@ -195,11 +195,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1125, 567);
+            this.ClientSize = new System.Drawing.Size(1803, 898);
             this.Controls.Add(this.main_panel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.main_panel.ResumeLayout(false);
             this.main_panel.PerformLayout();
             this.ResumeLayout(false);
