@@ -97,6 +97,7 @@ namespace Robot_Operatioin
             this.label47 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -119,7 +120,7 @@ namespace Robot_Operatioin
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1282, 94);
+            this.panel2.Size = new System.Drawing.Size(1140, 75);
             this.panel2.TabIndex = 2;
             // 
             // button20
@@ -128,10 +129,10 @@ namespace Robot_Operatioin
             this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Red;
-            this.button20.Location = new System.Drawing.Point(1239, 0);
+            this.button20.Location = new System.Drawing.Point(1101, 0);
             this.button20.Margin = new System.Windows.Forms.Padding(0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(40, 44);
+            this.button20.Size = new System.Drawing.Size(36, 35);
             this.button20.TabIndex = 581;
             this.button20.Text = "X";
             this.button20.UseVisualStyleBackColor = false;
@@ -141,9 +142,9 @@ namespace Robot_Operatioin
             this.lblCommunicationStatus.BackColor = System.Drawing.Color.Gray;
             this.lblCommunicationStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCommunicationStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lblCommunicationStatus.Location = new System.Drawing.Point(943, 57);
+            this.lblCommunicationStatus.Location = new System.Drawing.Point(838, 46);
             this.lblCommunicationStatus.Name = "lblCommunicationStatus";
-            this.lblCommunicationStatus.Size = new System.Drawing.Size(32, 25);
+            this.lblCommunicationStatus.Size = new System.Drawing.Size(28, 20);
             this.lblCommunicationStatus.TabIndex = 579;
             // 
             // lblAuth
@@ -152,9 +153,9 @@ namespace Robot_Operatioin
             this.lblAuth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAuth.ForeColor = System.Drawing.Color.White;
-            this.lblAuth.Location = new System.Drawing.Point(189, 45);
+            this.lblAuth.Location = new System.Drawing.Point(168, 36);
             this.lblAuth.Name = "lblAuth";
-            this.lblAuth.Size = new System.Drawing.Size(206, 37);
+            this.lblAuth.Size = new System.Drawing.Size(173, 31);
             this.lblAuth.TabIndex = 149;
             this.lblAuth.Text = "Authorisation";
             this.lblAuth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -165,10 +166,10 @@ namespace Robot_Operatioin
             this.lblUnm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblUnm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnm.ForeColor = System.Drawing.Color.White;
-            this.lblUnm.Location = new System.Drawing.Point(189, 9);
-            this.lblUnm.Margin = new System.Windows.Forms.Padding(10);
+            this.lblUnm.Location = new System.Drawing.Point(168, 7);
+            this.lblUnm.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.lblUnm.Name = "lblUnm";
-            this.lblUnm.Size = new System.Drawing.Size(179, 37);
+            this.lblUnm.Size = new System.Drawing.Size(151, 31);
             this.lblUnm.TabIndex = 150;
             this.lblUnm.Text = "User Name";
             this.lblUnm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -178,9 +179,9 @@ namespace Robot_Operatioin
             this.lblPcPLCComm.AutoSize = true;
             this.lblPcPLCComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPcPLCComm.ForeColor = System.Drawing.Color.White;
-            this.lblPcPLCComm.Location = new System.Drawing.Point(436, 45);
+            this.lblPcPLCComm.Location = new System.Drawing.Point(388, 36);
             this.lblPcPLCComm.Name = "lblPcPLCComm";
-            this.lblPcPLCComm.Size = new System.Drawing.Size(501, 40);
+            this.lblPcPLCComm.Size = new System.Drawing.Size(411, 36);
             this.lblPcPLCComm.TabIndex = 578;
             this.lblPcPLCComm.Text = " PC <-> PLC Communication :";
             this.lblPcPLCComm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,11 +192,11 @@ namespace Robot_Operatioin
             this.lblManual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManual.ForeColor = System.Drawing.Color.White;
-            this.lblManual.Location = new System.Drawing.Point(497, -14);
+            this.lblManual.Location = new System.Drawing.Point(442, -11);
             this.lblManual.Margin = new System.Windows.Forms.Padding(0);
             this.lblManual.Name = "lblManual";
-            this.lblManual.Padding = new System.Windows.Forms.Padding(9);
-            this.lblManual.Size = new System.Drawing.Size(365, 73);
+            this.lblManual.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.lblManual.Size = new System.Drawing.Size(304, 60);
             this.lblManual.TabIndex = 2;
             this.lblManual.Text = "PRODUCTION";
             this.lblManual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,10 +207,10 @@ namespace Robot_Operatioin
             this.lblWelcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(5, 7);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(10);
+            this.lblWelcome.Location = new System.Drawing.Point(4, 6);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(168, 37);
+            this.lblWelcome.Size = new System.Drawing.Size(141, 31);
             this.lblWelcome.TabIndex = 151;
             this.lblWelcome.Text = "Welcome :";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -220,9 +221,9 @@ namespace Robot_Operatioin
             this.lblAuthority.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblAuthority.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAuthority.ForeColor = System.Drawing.Color.White;
-            this.lblAuthority.Location = new System.Drawing.Point(5, 45);
+            this.lblAuthority.Location = new System.Drawing.Point(4, 36);
             this.lblAuthority.Name = "lblAuthority";
-            this.lblAuthority.Size = new System.Drawing.Size(162, 37);
+            this.lblAuthority.Size = new System.Drawing.Size(137, 31);
             this.lblAuthority.TabIndex = 152;
             this.lblAuthority.Text = "Authority :";
             this.lblAuthority.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,11 +270,11 @@ namespace Robot_Operatioin
             this.groupBox1.Controls.Add(this.label87);
             this.groupBox1.Controls.Add(this.label88);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(331, 98);
+            this.groupBox1.Location = new System.Drawing.Point(294, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(960, 399);
+            this.groupBox1.Size = new System.Drawing.Size(853, 319);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Primer Stage Robot";
@@ -283,9 +284,9 @@ namespace Robot_Operatioin
             this.label51.BackColor = System.Drawing.Color.MintCream;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(247, 305);
+            this.label51.Location = new System.Drawing.Point(220, 244);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(64, 34);
+            this.label51.Size = new System.Drawing.Size(57, 27);
             this.label51.TabIndex = 69;
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -294,9 +295,9 @@ namespace Robot_Operatioin
             this.label52.BackColor = System.Drawing.Color.MintCream;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(247, 351);
+            this.label52.Location = new System.Drawing.Point(220, 281);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(64, 34);
+            this.label52.Size = new System.Drawing.Size(57, 27);
             this.label52.TabIndex = 68;
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -305,9 +306,9 @@ namespace Robot_Operatioin
             this.label53.BackColor = System.Drawing.Color.MintCream;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(861, 227);
+            this.label53.Location = new System.Drawing.Point(765, 182);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(77, 37);
+            this.label53.Size = new System.Drawing.Size(68, 30);
             this.label53.TabIndex = 67;
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -316,9 +317,9 @@ namespace Robot_Operatioin
             this.label54.BackColor = System.Drawing.Color.MintCream;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(247, 218);
+            this.label54.Location = new System.Drawing.Point(220, 174);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(64, 34);
+            this.label54.Size = new System.Drawing.Size(57, 27);
             this.label54.TabIndex = 66;
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -327,9 +328,9 @@ namespace Robot_Operatioin
             this.label55.BackColor = System.Drawing.Color.MintCream;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(506, 287);
+            this.label55.Location = new System.Drawing.Point(450, 230);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(77, 37);
+            this.label55.Size = new System.Drawing.Size(68, 30);
             this.label55.TabIndex = 65;
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -338,9 +339,9 @@ namespace Robot_Operatioin
             this.label56.BackColor = System.Drawing.Color.MintCream;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(861, 341);
+            this.label56.Location = new System.Drawing.Point(765, 273);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(77, 37);
+            this.label56.Size = new System.Drawing.Size(68, 30);
             this.label56.TabIndex = 64;
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -349,9 +350,9 @@ namespace Robot_Operatioin
             this.label57.BackColor = System.Drawing.Color.MintCream;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(247, 262);
+            this.label57.Location = new System.Drawing.Point(220, 210);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(64, 34);
+            this.label57.Size = new System.Drawing.Size(57, 27);
             this.label57.TabIndex = 63;
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -360,9 +361,9 @@ namespace Robot_Operatioin
             this.label58.BackColor = System.Drawing.Color.MintCream;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(506, 347);
+            this.label58.Location = new System.Drawing.Point(450, 278);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(77, 37);
+            this.label58.Size = new System.Drawing.Size(68, 30);
             this.label58.TabIndex = 62;
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -371,9 +372,9 @@ namespace Robot_Operatioin
             this.label59.BackColor = System.Drawing.Color.MintCream;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label59.ForeColor = System.Drawing.Color.Black;
-            this.label59.Location = new System.Drawing.Point(861, 107);
+            this.label59.Location = new System.Drawing.Point(765, 86);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(77, 37);
+            this.label59.Size = new System.Drawing.Size(68, 30);
             this.label59.TabIndex = 59;
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -382,9 +383,9 @@ namespace Robot_Operatioin
             this.label60.BackColor = System.Drawing.Color.MintCream;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label60.ForeColor = System.Drawing.Color.Black;
-            this.label60.Location = new System.Drawing.Point(247, 90);
+            this.label60.Location = new System.Drawing.Point(220, 72);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(64, 34);
+            this.label60.Size = new System.Drawing.Size(57, 27);
             this.label60.TabIndex = 61;
             this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -393,9 +394,9 @@ namespace Robot_Operatioin
             this.label61.BackColor = System.Drawing.Color.MintCream;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.Color.Black;
-            this.label61.Location = new System.Drawing.Point(506, 107);
+            this.label61.Location = new System.Drawing.Point(450, 86);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(77, 37);
+            this.label61.Size = new System.Drawing.Size(68, 30);
             this.label61.TabIndex = 60;
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -404,9 +405,9 @@ namespace Robot_Operatioin
             this.label62.BackColor = System.Drawing.Color.MintCream;
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.ForeColor = System.Drawing.Color.Black;
-            this.label62.Location = new System.Drawing.Point(861, 170);
+            this.label62.Location = new System.Drawing.Point(765, 136);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(77, 37);
+            this.label62.Size = new System.Drawing.Size(68, 30);
             this.label62.TabIndex = 58;
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -415,9 +416,9 @@ namespace Robot_Operatioin
             this.label63.BackColor = System.Drawing.Color.MintCream;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.ForeColor = System.Drawing.Color.Black;
-            this.label63.Location = new System.Drawing.Point(247, 133);
+            this.label63.Location = new System.Drawing.Point(220, 106);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(64, 34);
+            this.label63.Size = new System.Drawing.Size(57, 27);
             this.label63.TabIndex = 57;
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -426,9 +427,9 @@ namespace Robot_Operatioin
             this.label64.BackColor = System.Drawing.Color.MintCream;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.ForeColor = System.Drawing.Color.Black;
-            this.label64.Location = new System.Drawing.Point(506, 167);
+            this.label64.Location = new System.Drawing.Point(450, 134);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(77, 37);
+            this.label64.Size = new System.Drawing.Size(68, 30);
             this.label64.TabIndex = 56;
             this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -437,9 +438,9 @@ namespace Robot_Operatioin
             this.label65.BackColor = System.Drawing.Color.MintCream;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label65.ForeColor = System.Drawing.Color.Black;
-            this.label65.Location = new System.Drawing.Point(247, 176);
+            this.label65.Location = new System.Drawing.Point(220, 141);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(64, 34);
+            this.label65.Size = new System.Drawing.Size(57, 27);
             this.label65.TabIndex = 54;
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -448,9 +449,9 @@ namespace Robot_Operatioin
             this.label66.BackColor = System.Drawing.Color.MintCream;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(861, 47);
+            this.label66.Location = new System.Drawing.Point(765, 38);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(77, 37);
+            this.label66.Size = new System.Drawing.Size(68, 30);
             this.label66.TabIndex = 53;
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -459,9 +460,9 @@ namespace Robot_Operatioin
             this.label67.BackColor = System.Drawing.Color.MintCream;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(247, 47);
+            this.label67.Location = new System.Drawing.Point(220, 38);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(64, 34);
+            this.label67.Size = new System.Drawing.Size(57, 27);
             this.label67.TabIndex = 52;
             this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -470,9 +471,9 @@ namespace Robot_Operatioin
             this.label68.BackColor = System.Drawing.Color.MintCream;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label68.ForeColor = System.Drawing.Color.Black;
-            this.label68.Location = new System.Drawing.Point(506, 227);
+            this.label68.Location = new System.Drawing.Point(450, 182);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(77, 37);
+            this.label68.Size = new System.Drawing.Size(68, 30);
             this.label68.TabIndex = 55;
             this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -481,9 +482,9 @@ namespace Robot_Operatioin
             this.label69.BackColor = System.Drawing.Color.MintCream;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.ForeColor = System.Drawing.Color.Black;
-            this.label69.Location = new System.Drawing.Point(506, 47);
+            this.label69.Location = new System.Drawing.Point(450, 38);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(77, 37);
+            this.label69.Size = new System.Drawing.Size(68, 30);
             this.label69.TabIndex = 51;
             this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -493,11 +494,11 @@ namespace Robot_Operatioin
             this.label70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label70.ForeColor = System.Drawing.Color.White;
-            this.label70.Location = new System.Drawing.Point(366, 102);
+            this.label70.Location = new System.Drawing.Point(325, 82);
             this.label70.Margin = new System.Windows.Forms.Padding(0);
             this.label70.Name = "label70";
-            this.label70.Padding = new System.Windows.Forms.Padding(9);
-            this.label70.Size = new System.Drawing.Size(107, 43);
+            this.label70.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label70.Size = new System.Drawing.Size(91, 34);
             this.label70.TabIndex = 50;
             this.label70.Text = "Color No";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -508,11 +509,11 @@ namespace Robot_Operatioin
             this.label71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label71.ForeColor = System.Drawing.Color.White;
-            this.label71.Location = new System.Drawing.Point(366, 162);
+            this.label71.Location = new System.Drawing.Point(325, 130);
             this.label71.Margin = new System.Windows.Forms.Padding(0);
             this.label71.Name = "label71";
-            this.label71.Padding = new System.Windows.Forms.Padding(9);
-            this.label71.Size = new System.Drawing.Size(72, 43);
+            this.label71.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label71.Size = new System.Drawing.Size(61, 34);
             this.label71.TabIndex = 49;
             this.label71.Text = "Fluid";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -523,11 +524,11 @@ namespace Robot_Operatioin
             this.label72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label72.ForeColor = System.Drawing.Color.White;
-            this.label72.Location = new System.Drawing.Point(366, 222);
+            this.label72.Location = new System.Drawing.Point(325, 178);
             this.label72.Margin = new System.Windows.Forms.Padding(0);
             this.label72.Name = "label72";
-            this.label72.Padding = new System.Windows.Forms.Padding(9);
-            this.label72.Size = new System.Drawing.Size(76, 43);
+            this.label72.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label72.Size = new System.Drawing.Size(64, 34);
             this.label72.TabIndex = 48;
             this.label72.Text = "Atom";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,11 +539,11 @@ namespace Robot_Operatioin
             this.label73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label73.ForeColor = System.Drawing.Color.White;
-            this.label73.Location = new System.Drawing.Point(366, 282);
+            this.label73.Location = new System.Drawing.Point(325, 226);
             this.label73.Margin = new System.Windows.Forms.Padding(0);
             this.label73.Name = "label73";
-            this.label73.Padding = new System.Windows.Forms.Padding(9);
-            this.label73.Size = new System.Drawing.Size(88, 43);
+            this.label73.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label73.Size = new System.Drawing.Size(72, 34);
             this.label73.TabIndex = 47;
             this.label73.Text = "Shape";
             this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -553,11 +554,11 @@ namespace Robot_Operatioin
             this.label74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label74.ForeColor = System.Drawing.Color.White;
-            this.label74.Location = new System.Drawing.Point(366, 336);
+            this.label74.Location = new System.Drawing.Point(325, 269);
             this.label74.Margin = new System.Windows.Forms.Padding(0);
             this.label74.Name = "label74";
-            this.label74.Padding = new System.Windows.Forms.Padding(9);
-            this.label74.Size = new System.Drawing.Size(138, 43);
+            this.label74.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label74.Size = new System.Drawing.Size(119, 34);
             this.label74.TabIndex = 46;
             this.label74.Text = "Hv Set Point";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -568,11 +569,11 @@ namespace Robot_Operatioin
             this.label75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label75.ForeColor = System.Drawing.Color.White;
-            this.label75.Location = new System.Drawing.Point(366, 42);
+            this.label75.Location = new System.Drawing.Point(325, 34);
             this.label75.Margin = new System.Windows.Forms.Padding(0);
             this.label75.Name = "label75";
-            this.label75.Padding = new System.Windows.Forms.Padding(9);
-            this.label75.Size = new System.Drawing.Size(114, 43);
+            this.label75.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label75.Size = new System.Drawing.Size(96, 34);
             this.label75.TabIndex = 45;
             this.label75.Text = "Modal No";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -583,11 +584,11 @@ namespace Robot_Operatioin
             this.label76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.ForeColor = System.Drawing.Color.White;
-            this.label76.Location = new System.Drawing.Point(625, 221);
+            this.label76.Location = new System.Drawing.Point(556, 177);
             this.label76.Margin = new System.Windows.Forms.Padding(0);
             this.label76.Name = "label76";
-            this.label76.Padding = new System.Windows.Forms.Padding(9);
-            this.label76.Size = new System.Drawing.Size(137, 43);
+            this.label76.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label76.Size = new System.Drawing.Size(119, 34);
             this.label76.TabIndex = 43;
             this.label76.Text = "Air Pressure";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -598,11 +599,11 @@ namespace Robot_Operatioin
             this.label77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label77.ForeColor = System.Drawing.Color.White;
-            this.label77.Location = new System.Drawing.Point(625, 335);
+            this.label77.Location = new System.Drawing.Point(556, 268);
             this.label77.Margin = new System.Windows.Forms.Padding(0);
             this.label77.Name = "label77";
-            this.label77.Padding = new System.Windows.Forms.Padding(9);
-            this.label77.Size = new System.Drawing.Size(220, 43);
+            this.label77.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label77.Size = new System.Drawing.Size(187, 34);
             this.label77.TabIndex = 42;
             this.label77.Text = "HV Current Feedback";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -613,11 +614,11 @@ namespace Robot_Operatioin
             this.label78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label78.ForeColor = System.Drawing.Color.White;
-            this.label78.Location = new System.Drawing.Point(22, 335);
+            this.label78.Location = new System.Drawing.Point(20, 268);
             this.label78.Margin = new System.Windows.Forms.Padding(0);
             this.label78.Name = "label78";
-            this.label78.Padding = new System.Windows.Forms.Padding(9);
-            this.label78.Size = new System.Drawing.Size(195, 43);
+            this.label78.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label78.Size = new System.Drawing.Size(166, 34);
             this.label78.TabIndex = 44;
             this.label78.Text = "Paint Consumption";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -628,11 +629,11 @@ namespace Robot_Operatioin
             this.label79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label79.ForeColor = System.Drawing.Color.White;
-            this.label79.Location = new System.Drawing.Point(625, 101);
+            this.label79.Location = new System.Drawing.Point(556, 81);
             this.label79.Margin = new System.Windows.Forms.Padding(0);
             this.label79.Name = "label79";
-            this.label79.Padding = new System.Windows.Forms.Padding(9);
-            this.label79.Size = new System.Drawing.Size(189, 43);
+            this.label79.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label79.Size = new System.Drawing.Size(160, 34);
             this.label79.TabIndex = 41;
             this.label79.Text = "Conveyor Position";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -643,11 +644,11 @@ namespace Robot_Operatioin
             this.label80.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label80.ForeColor = System.Drawing.Color.White;
-            this.label80.Location = new System.Drawing.Point(22, 84);
+            this.label80.Location = new System.Drawing.Point(20, 67);
             this.label80.Margin = new System.Windows.Forms.Padding(0);
             this.label80.Name = "label80";
-            this.label80.Padding = new System.Windows.Forms.Padding(9);
-            this.label80.Size = new System.Drawing.Size(197, 43);
+            this.label80.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label80.Size = new System.Drawing.Size(166, 34);
             this.label80.TabIndex = 40;
             this.label80.Text = "Robot Teach Mode";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -658,11 +659,11 @@ namespace Robot_Operatioin
             this.label81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label81.ForeColor = System.Drawing.Color.White;
-            this.label81.Location = new System.Drawing.Point(625, 161);
+            this.label81.Location = new System.Drawing.Point(556, 129);
             this.label81.Margin = new System.Windows.Forms.Padding(0);
             this.label81.Name = "label81";
-            this.label81.Padding = new System.Windows.Forms.Padding(9);
-            this.label81.Size = new System.Drawing.Size(161, 43);
+            this.label81.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label81.Size = new System.Drawing.Size(136, 34);
             this.label81.TabIndex = 39;
             this.label81.Text = "Encoder Count";
             this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -673,11 +674,11 @@ namespace Robot_Operatioin
             this.label82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label82.ForeColor = System.Drawing.Color.White;
-            this.label82.Location = new System.Drawing.Point(22, 127);
+            this.label82.Location = new System.Drawing.Point(20, 102);
             this.label82.Margin = new System.Windows.Forms.Padding(0);
             this.label82.Name = "label82";
-            this.label82.Padding = new System.Windows.Forms.Padding(9);
-            this.label82.Size = new System.Drawing.Size(181, 43);
+            this.label82.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label82.Size = new System.Drawing.Size(155, 34);
             this.label82.TabIndex = 38;
             this.label82.Text = "Robot Hold Mode";
             this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -688,11 +689,11 @@ namespace Robot_Operatioin
             this.label83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label83.ForeColor = System.Drawing.Color.White;
-            this.label83.Location = new System.Drawing.Point(22, 170);
+            this.label83.Location = new System.Drawing.Point(20, 136);
             this.label83.Margin = new System.Windows.Forms.Padding(0);
             this.label83.Name = "label83";
-            this.label83.Padding = new System.Windows.Forms.Padding(9);
-            this.label83.Size = new System.Drawing.Size(211, 43);
+            this.label83.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label83.Size = new System.Drawing.Size(183, 34);
             this.label83.TabIndex = 37;
             this.label83.Text = "Robot Brush Number";
             this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -703,11 +704,11 @@ namespace Robot_Operatioin
             this.label84.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label84.ForeColor = System.Drawing.Color.White;
-            this.label84.Location = new System.Drawing.Point(22, 213);
+            this.label84.Location = new System.Drawing.Point(20, 170);
             this.label84.Margin = new System.Windows.Forms.Padding(0);
             this.label84.Name = "label84";
-            this.label84.Padding = new System.Windows.Forms.Padding(9);
-            this.label84.Size = new System.Drawing.Size(185, 43);
+            this.label84.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label84.Size = new System.Drawing.Size(158, 34);
             this.label84.TabIndex = 36;
             this.label84.Text = "Robot Cycle Time";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -718,11 +719,11 @@ namespace Robot_Operatioin
             this.label85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label85.ForeColor = System.Drawing.Color.White;
-            this.label85.Location = new System.Drawing.Point(22, 256);
+            this.label85.Location = new System.Drawing.Point(20, 205);
             this.label85.Margin = new System.Windows.Forms.Padding(0);
             this.label85.Name = "label85";
-            this.label85.Padding = new System.Windows.Forms.Padding(9);
-            this.label85.Size = new System.Drawing.Size(139, 43);
+            this.label85.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label85.Size = new System.Drawing.Size(117, 34);
             this.label85.TabIndex = 35;
             this.label85.Text = "HV ON/OFF";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -733,11 +734,11 @@ namespace Robot_Operatioin
             this.label86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label86.ForeColor = System.Drawing.Color.White;
-            this.label86.Location = new System.Drawing.Point(625, 41);
+            this.label86.Location = new System.Drawing.Point(556, 33);
             this.label86.Margin = new System.Windows.Forms.Padding(0);
             this.label86.Name = "label86";
-            this.label86.Padding = new System.Windows.Forms.Padding(9);
-            this.label86.Size = new System.Drawing.Size(178, 43);
+            this.label86.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label86.Size = new System.Drawing.Size(147, 34);
             this.label86.TabIndex = 33;
             this.label86.Text = "Conveyor Speed";
             this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -748,11 +749,11 @@ namespace Robot_Operatioin
             this.label87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.ForeColor = System.Drawing.Color.White;
-            this.label87.Location = new System.Drawing.Point(22, 299);
+            this.label87.Location = new System.Drawing.Point(20, 239);
             this.label87.Margin = new System.Windows.Forms.Padding(0);
             this.label87.Name = "label87";
-            this.label87.Padding = new System.Windows.Forms.Padding(9);
-            this.label87.Size = new System.Drawing.Size(105, 43);
+            this.label87.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label87.Size = new System.Drawing.Size(92, 34);
             this.label87.TabIndex = 34;
             this.label87.Text = "HV Error";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -763,11 +764,11 @@ namespace Robot_Operatioin
             this.label88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label88.ForeColor = System.Drawing.Color.White;
-            this.label88.Location = new System.Drawing.Point(22, 41);
+            this.label88.Location = new System.Drawing.Point(20, 33);
             this.label88.Margin = new System.Windows.Forms.Padding(0);
             this.label88.Name = "label88";
-            this.label88.Padding = new System.Windows.Forms.Padding(9);
-            this.label88.Size = new System.Drawing.Size(182, 43);
+            this.label88.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label88.Size = new System.Drawing.Size(154, 34);
             this.label88.TabIndex = 32;
             this.label88.Text = "Robot Auto Mode";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -778,9 +779,9 @@ namespace Robot_Operatioin
             this.label49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label49.ForeColor = System.Drawing.Color.White;
-            this.label49.Location = new System.Drawing.Point(42, 458);
+            this.label49.Location = new System.Drawing.Point(37, 366);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(244, 26);
+            this.label49.Size = new System.Drawing.Size(209, 24);
             this.label49.TabIndex = 36;
             this.label49.Text = "ROBOT E-STOP Healty";
             // 
@@ -803,9 +804,10 @@ namespace Robot_Operatioin
             this.panel6.Controls.Add(this.button14);
             this.panel6.Controls.Add(this.label47);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 563);
+            this.panel6.Location = new System.Drawing.Point(0, 451);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1282, 198);
+            this.panel6.Size = new System.Drawing.Size(1140, 158);
             this.panel6.TabIndex = 50;
             // 
             // button19
@@ -815,9 +817,10 @@ namespace Robot_Operatioin
             this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(1215, 135);
+            this.button19.Location = new System.Drawing.Point(1080, 108);
+            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(63, 64);
+            this.button19.Size = new System.Drawing.Size(56, 51);
             this.button19.TabIndex = 581;
             this.button19.UseVisualStyleBackColor = false;
             // 
@@ -826,9 +829,10 @@ namespace Robot_Operatioin
             this.button18.BackColor = System.Drawing.Color.Gray;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(239, 127);
+            this.button18.Location = new System.Drawing.Point(212, 102);
+            this.button18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(218, 46);
+            this.button18.Size = new System.Drawing.Size(194, 37);
             this.button18.TabIndex = 33;
             this.button18.Text = "Service Control";
             this.button18.UseVisualStyleBackColor = false;
@@ -838,9 +842,10 @@ namespace Robot_Operatioin
             this.button11.BackColor = System.Drawing.Color.Gray;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(895, 71);
+            this.button11.Location = new System.Drawing.Point(796, 57);
+            this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(106, 46);
+            this.button11.Size = new System.Drawing.Size(94, 37);
             this.button11.TabIndex = 48;
             this.button11.Text = "OFF";
             this.button11.UseVisualStyleBackColor = false;
@@ -852,9 +857,10 @@ namespace Robot_Operatioin
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(3, 136);
+            this.button10.Location = new System.Drawing.Point(3, 109);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(63, 64);
+            this.button10.Size = new System.Drawing.Size(56, 51);
             this.button10.TabIndex = 580;
             this.button10.UseVisualStyleBackColor = false;
             // 
@@ -863,9 +869,10 @@ namespace Robot_Operatioin
             this.button16.BackColor = System.Drawing.Color.Gray;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(851, 127);
+            this.button16.Location = new System.Drawing.Point(756, 102);
+            this.button16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(218, 46);
+            this.button16.Size = new System.Drawing.Size(194, 37);
             this.button16.TabIndex = 38;
             this.button16.Text = "Active Position ";
             this.button16.UseVisualStyleBackColor = false;
@@ -876,11 +883,11 @@ namespace Robot_Operatioin
             this.label45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(646, 68);
+            this.label45.Location = new System.Drawing.Point(574, 54);
             this.label45.Margin = new System.Windows.Forms.Padding(0);
             this.label45.Name = "label45";
-            this.label45.Padding = new System.Windows.Forms.Padding(9);
-            this.label45.Size = new System.Drawing.Size(195, 47);
+            this.label45.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label45.Size = new System.Drawing.Size(161, 39);
             this.label45.TabIndex = 47;
             this.label45.Text = "Flush Position :";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -890,9 +897,10 @@ namespace Robot_Operatioin
             this.button15.BackColor = System.Drawing.Color.Gray;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(545, 127);
+            this.button15.Location = new System.Drawing.Point(484, 102);
+            this.button15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(218, 46);
+            this.button15.Size = new System.Drawing.Size(194, 37);
             this.button15.TabIndex = 39;
             this.button15.Text = "Ghost Mode Off";
             this.button15.UseVisualStyleBackColor = false;
@@ -902,9 +910,10 @@ namespace Robot_Operatioin
             this.button12.BackColor = System.Drawing.Color.Gray;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(522, 70);
+            this.button12.Location = new System.Drawing.Point(464, 56);
+            this.button12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(106, 46);
+            this.button12.Size = new System.Drawing.Size(94, 37);
             this.button12.TabIndex = 46;
             this.button12.Text = "OFF";
             this.button12.UseVisualStyleBackColor = false;
@@ -914,9 +923,10 @@ namespace Robot_Operatioin
             this.button17.BackColor = System.Drawing.Color.Gray;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(359, 13);
+            this.button17.Location = new System.Drawing.Point(319, 10);
+            this.button17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(106, 46);
+            this.button17.Size = new System.Drawing.Size(94, 37);
             this.button17.TabIndex = 37;
             this.button17.Text = "OFF";
             this.button17.UseVisualStyleBackColor = false;
@@ -927,11 +937,11 @@ namespace Robot_Operatioin
             this.label46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label46.ForeColor = System.Drawing.Color.White;
-            this.label46.Location = new System.Drawing.Point(250, 68);
+            this.label46.Location = new System.Drawing.Point(222, 54);
             this.label46.Margin = new System.Windows.Forms.Padding(0);
             this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(9);
-            this.label46.Size = new System.Drawing.Size(273, 47);
+            this.label46.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label46.Size = new System.Drawing.Size(226, 39);
             this.label46.TabIndex = 45;
             this.label46.Text = "Maintenance Position :";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -942,11 +952,11 @@ namespace Robot_Operatioin
             this.label50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label50.ForeColor = System.Drawing.Color.White;
-            this.label50.Location = new System.Drawing.Point(118, 13);
+            this.label50.Location = new System.Drawing.Point(105, 10);
             this.label50.Margin = new System.Windows.Forms.Padding(0);
             this.label50.Name = "label50";
-            this.label50.Padding = new System.Windows.Forms.Padding(9);
-            this.label50.Size = new System.Drawing.Size(201, 47);
+            this.label50.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label50.Size = new System.Drawing.Size(165, 39);
             this.label50.TabIndex = 32;
             this.label50.Text = "Home Position :";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -956,9 +966,10 @@ namespace Robot_Operatioin
             this.button13.BackColor = System.Drawing.Color.Gray;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(732, 13);
+            this.button13.Location = new System.Drawing.Point(651, 10);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(106, 46);
+            this.button13.Size = new System.Drawing.Size(94, 37);
             this.button13.TabIndex = 44;
             this.button13.Text = "OFF";
             this.button13.UseVisualStyleBackColor = false;
@@ -969,11 +980,11 @@ namespace Robot_Operatioin
             this.label48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.White;
-            this.label48.Location = new System.Drawing.Point(483, 10);
+            this.label48.Location = new System.Drawing.Point(429, 8);
             this.label48.Margin = new System.Windows.Forms.Padding(0);
             this.label48.Name = "label48";
-            this.label48.Padding = new System.Windows.Forms.Padding(9);
-            this.label48.Size = new System.Drawing.Size(252, 47);
+            this.label48.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label48.Size = new System.Drawing.Size(206, 39);
             this.label48.TabIndex = 40;
             this.label48.Text = "Calibration Position :";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -983,9 +994,10 @@ namespace Robot_Operatioin
             this.button14.BackColor = System.Drawing.Color.Gray;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(1061, 13);
+            this.button14.Location = new System.Drawing.Point(943, 10);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(106, 46);
+            this.button14.Size = new System.Drawing.Size(94, 37);
             this.button14.TabIndex = 43;
             this.button14.Text = "OFF";
             this.button14.UseVisualStyleBackColor = false;
@@ -996,11 +1008,11 @@ namespace Robot_Operatioin
             this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.White;
-            this.label47.Location = new System.Drawing.Point(843, 10);
+            this.label47.Location = new System.Drawing.Point(749, 8);
             this.label47.Margin = new System.Windows.Forms.Padding(0);
             this.label47.Name = "label47";
-            this.label47.Padding = new System.Windows.Forms.Padding(9);
-            this.label47.Size = new System.Drawing.Size(222, 47);
+            this.label47.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.label47.Size = new System.Drawing.Size(184, 39);
             this.label47.TabIndex = 42;
             this.label47.Text = "Arm  Up Position :";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1009,9 +1021,10 @@ namespace Robot_Operatioin
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox2.Image = global::Robot_Operatioin.Properties.Resources.robot;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 101);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 81);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(313, 367);
+            this.pictureBox2.Size = new System.Drawing.Size(278, 294);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 35;
             this.pictureBox2.TabStop = false;
@@ -1019,17 +1032,28 @@ namespace Robot_Operatioin
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(69)))), ((int)(((byte)(6)))));
-            this.panel1.Location = new System.Drawing.Point(-8, 94);
+            this.panel1.Location = new System.Drawing.Point(-7, 75);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1287, 5);
+            this.panel1.Size = new System.Drawing.Size(1144, 4);
             this.panel1.TabIndex = 51;
             // 
-            // PRODUCTION
+            // lblStatus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(0, 0);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(46, 17);
+            this.lblStatus.TabIndex = 52;
+            this.lblStatus.Text = "label1";
+            // 
+            // frmProduction
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1282, 761);
+            this.ClientSize = new System.Drawing.Size(1140, 609);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label49);
@@ -1037,7 +1061,7 @@ namespace Robot_Operatioin
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "PRODUCTION";
+            this.Name = "frmProduction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.PRODUCTION_Load);
@@ -1123,6 +1147,7 @@ namespace Robot_Operatioin
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 

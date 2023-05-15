@@ -55,8 +55,11 @@
     <Compile Include="BusinessLogic\BusinessCommon.cs" />
     <Compile Include="BusinessLogic\Communication.cs" />
     <Compile Include="BusinessLogic\DataAccessLayer.cs" />
+    <Compile Include="BusinessLogic\DeltaCommu.cs" />
     <Compile Include="BusinessLogic\InputValidation.cs" />
+    <Compile Include="BusinessLogic\PLC.cs" />
     <Compile Include="BusinessLogic\SetupConfiguration.cs" />
+    <Compile Include="CPU_Type.cs" />
     <Compile Include="frmBrushTable.cs">
       <SubType>Form</SubType>
     </Compile>
