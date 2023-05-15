@@ -10,13 +10,21 @@ using System.Windows.Forms;
 
 namespace Robot_Operatioin
 {
-    public partial class Production : Form
+    public partial class FrmProduction : Form
     {
-        public Production()
+        public FrmProduction()
         {
             InitializeComponent();
         }
 
-       
+        private void FrmProduction_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

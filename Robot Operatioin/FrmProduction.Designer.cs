@@ -1,7 +1,7 @@
 ﻿
 namespace Robot_Operatioin
 {
-    partial class Production
+    partial class FrmProduction
     {
         /// <summary>
         /// Required designer variable.
@@ -658,6 +658,7 @@ namespace Robot_Operatioin
             this.button20.TabIndex = 581;
             this.button20.Text = "X";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // lblCommunicationStatus
             // 
@@ -1021,7 +1022,7 @@ namespace Robot_Operatioin
             this.label88.Text = "Robot Auto Mode";
             this.label88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Production
+            // FrmProduction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1033,9 +1034,11 @@ namespace Robot_Operatioin
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Production";
+            this.Name = "FrmProduction";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmProduction_Load);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel2.ResumeLayout(false);
