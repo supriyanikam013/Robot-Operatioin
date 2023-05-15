@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\BusinessLogic\ApplicationLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessLogic\BusinessCommon.cs" />
+    <Compile Include="BusinessLogic\BusinessLogic\Communication.cs" />
+    <Compile Include="BusinessLogic\BusinessLogic\DataAccessLayer.cs" />
+    <Compile Include="BusinessLogic\BusinessLogic\InputValidation.cs" />
+    <Compile Include="BusinessLogic\BusinessLogic\SetupConfiguration.cs" />
     <Compile Include="frmProduction.cs">
       <SubType>Form</SubType>
     </Compile>
