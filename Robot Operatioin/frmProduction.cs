@@ -13,6 +13,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Robot_Operatioin.BusinessLogic;
+using static CYGNII_Operations_management.BusinessLogic.ApplicationLogic;
 
 namespace Robot_Operatioin
 {
@@ -30,6 +31,7 @@ namespace Robot_Operatioin
 
         DeltaCommu PlcComm = new DeltaCommu();
         ushort[] result1 = { };
+        string IP;
         ushort[] result2 = { };
         static string Del_NOK_data_Days = "";
         static string Report_send_to = "";
@@ -48,7 +50,7 @@ namespace Robot_Operatioin
         Color notcheckedColor = Color.Khaki;
 
         //private PlcComm = null;
-        //private ExceptionCode errorState = ExceptionCode.ExceptionNo;
+        private ExceptionCode errorState = ExceptionCode.ExceptionNo;
 
         public frmProduction()
         {
@@ -78,11 +80,40 @@ namespace Robot_Operatioin
             timer1_Tick(null, null);
             timer1.Start();
             lblTime.Focus();
-
+            connectToPlc(IP);
             lblUnm.Text = frmLogin.loginUserName;
             lblAuth.Text = frmLogin.LoginAuthorisation;
         }
 
+        private string connectToPlc( string IP)
+        {
+            string rslt = "";
+            try
+            {
+                rslt = PlcComm.Connect(IP);
+                // connect to Plc
+
+                if (errorState != ExceptionCode.ExceptionNo)
+                {
+                    lblCommunicationStatus.BackColor = Color.Red;
+                    //delay(1);
+                    //connectToPlc();             // It will Contineu execute until connection not established
+                }
+                else
+                {
+                    lblCommunicationStatus.BackColor = Color.Green;
+                }
+                return rslt;
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
+                LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
+                //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // connectToPlc(IP);
+                return rslt;
+            }
+        }
 
         public static void LogFileWrite(string message)
         {
@@ -181,24 +212,6 @@ namespace Robot_Operatioin
 
         #region ------------Connect To PC---PLC----------------
 
-        public string connectToPlc(string IP)
-        {
-            string rslt = "";
-            try
-            {
-                rslt = PlcComm.Connect(IP);
-
-                return rslt;
-            }
-            catch (Exception ex)
-            {
-                lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
-                LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
-                //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // connectToPlc(IP);
-                return rslt;
-            }
-        }
         #endregion  
 
 
