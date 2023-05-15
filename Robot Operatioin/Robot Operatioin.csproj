@@ -78,6 +78,8 @@
     <Compile Include="frmProduction.Designer.cs">
       <DependentUpon>frmProduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="MySql\Data\Types\ByteArray.cs" />
+    <Compile Include="MySql\Data\Types\Struct.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBrushTable.resx">
