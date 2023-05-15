@@ -1,7 +1,7 @@
 ﻿
 namespace Robot_Operatioin
 {
-    partial class PRODUCTION
+    partial class frmProduction
     {
         /// <summary>
         /// Required designer variable.

@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PRODUCTION.cs">
+    <Compile Include="frmProduction.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PRODUCTION.Designer.cs">
-      <DependentUpon>PRODUCTION.cs</DependentUpon>
+    <Compile Include="frmProduction.Designer.cs">
+      <DependentUpon>frmProduction.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PRODUCTION.resx">
-      <DependentUpon>PRODUCTION.cs</DependentUpon>
+    <EmbeddedResource Include="frmProduction.resx">
+      <DependentUpon>frmProduction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

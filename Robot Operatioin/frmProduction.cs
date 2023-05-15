@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Robot_Operatioin
 {
-    public partial class PRODUCTION : Form
+    public partial class frmProduction : Form
     {
-        public PRODUCTION()
+        public frmProduction()
         {
             InitializeComponent();
         }
