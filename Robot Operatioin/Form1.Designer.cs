@@ -40,9 +40,7 @@ namespace Robot_Operatioin
             this.lblAuthority = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -170,7 +168,6 @@ namespace Robot_Operatioin
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(336, 128);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
@@ -179,14 +176,6 @@ namespace Robot_Operatioin
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(58, 51);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 4;
             // 
             // Form1
             // 
@@ -200,7 +189,6 @@ namespace Robot_Operatioin
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -218,7 +206,6 @@ namespace Robot_Operatioin
         private System.Windows.Forms.Label lblAuthority;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
