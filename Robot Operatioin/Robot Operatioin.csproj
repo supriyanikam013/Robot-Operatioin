@@ -33,7 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.33.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\MySql.Data\v4.0_8.0.33.0__c5687fc88969c44d\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,17 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLogic\BusinessLogic\ApplicationLogic.cs" />
-    <Compile Include="BusinessLogic\BusinessLogic\BusinessCommon.cs" />
-    <Compile Include="BusinessLogic\BusinessLogic\Communication.cs" />
-    <Compile Include="BusinessLogic\BusinessLogic\DataAccessLayer.cs" />
-    <Compile Include="BusinessLogic\BusinessLogic\InputValidation.cs" />
-    <Compile Include="BusinessLogic\BusinessLogic\SetupConfiguration.cs" />
+    <Compile Include="BusinessLogic\ApplicationLogic.cs" />
+    <Compile Include="BusinessLogic\BusinessCommon.cs" />
+    <Compile Include="BusinessLogic\Communication.cs" />
+    <Compile Include="BusinessLogic\DataAccessLayer.cs" />
+    <Compile Include="BusinessLogic\InputValidation.cs" />
+    <Compile Include="BusinessLogic\SetupConfiguration.cs" />
     <Compile Include="frmBrushTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBrushTable.Designer.cs">
       <DependentUpon>frmBrushTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProduction.cs">
       <SubType>Form</SubType>
@@ -66,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBrushTable.resx">
+      <DependentUpon>frmBrushTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmProduction.resx">
       <DependentUpon>frmProduction.cs</DependentUpon>
     </EmbeddedResource>
