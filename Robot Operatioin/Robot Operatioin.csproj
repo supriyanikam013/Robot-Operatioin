@@ -78,6 +78,12 @@
     <Compile Include="frmProduction.Designer.cs">
       <DependentUpon>frmProduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="MySql\Data\Types\ByteArray.cs" />
     <Compile Include="MySql\Data\Types\Struct.cs" />
     <Compile Include="Program.cs" />
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmProduction.resx">
       <DependentUpon>frmProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
