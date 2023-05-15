@@ -16,5 +16,7 @@ namespace Robot_Operatioin
         {
             InitializeComponent();
         }
+
+       
     }
 }
