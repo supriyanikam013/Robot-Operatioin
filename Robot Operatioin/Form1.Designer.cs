@@ -40,7 +40,9 @@ namespace Robot_Operatioin
             this.lblAuthority = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -56,8 +58,9 @@ namespace Robot_Operatioin
             this.panel2.Controls.Add(this.lblAuthority);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1300, 127);
+            this.panel2.Size = new System.Drawing.Size(1156, 102);
             this.panel2.TabIndex = 2;
             // 
             // button20
@@ -66,10 +69,10 @@ namespace Robot_Operatioin
             this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Red;
-            this.button20.Location = new System.Drawing.Point(1262, 0);
+            this.button20.Location = new System.Drawing.Point(1122, 0);
             this.button20.Margin = new System.Windows.Forms.Padding(0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(36, 44);
+            this.button20.Size = new System.Drawing.Size(32, 35);
             this.button20.TabIndex = 581;
             this.button20.Text = "X";
             this.button20.UseVisualStyleBackColor = false;
@@ -79,9 +82,9 @@ namespace Robot_Operatioin
             this.lblCommunicationStatus.BackColor = System.Drawing.Color.Gray;
             this.lblCommunicationStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCommunicationStatus.ForeColor = System.Drawing.Color.Gray;
-            this.lblCommunicationStatus.Location = new System.Drawing.Point(943, 84);
+            this.lblCommunicationStatus.Location = new System.Drawing.Point(838, 67);
             this.lblCommunicationStatus.Name = "lblCommunicationStatus";
-            this.lblCommunicationStatus.Size = new System.Drawing.Size(31, 25);
+            this.lblCommunicationStatus.Size = new System.Drawing.Size(28, 20);
             this.lblCommunicationStatus.TabIndex = 579;
             // 
             // lblAuth
@@ -90,9 +93,9 @@ namespace Robot_Operatioin
             this.lblAuth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblAuth.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAuth.ForeColor = System.Drawing.Color.White;
-            this.lblAuth.Location = new System.Drawing.Point(196, 50);
+            this.lblAuth.Location = new System.Drawing.Point(174, 40);
             this.lblAuth.Name = "lblAuth";
-            this.lblAuth.Size = new System.Drawing.Size(227, 40);
+            this.lblAuth.Size = new System.Drawing.Size(192, 36);
             this.lblAuth.TabIndex = 149;
             this.lblAuth.Text = "Authorisation";
             this.lblAuth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,10 +106,10 @@ namespace Robot_Operatioin
             this.lblUnm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblUnm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnm.ForeColor = System.Drawing.Color.White;
-            this.lblUnm.Location = new System.Drawing.Point(196, 14);
-            this.lblUnm.Margin = new System.Windows.Forms.Padding(10);
+            this.lblUnm.Location = new System.Drawing.Point(174, 11);
+            this.lblUnm.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.lblUnm.Name = "lblUnm";
-            this.lblUnm.Size = new System.Drawing.Size(199, 40);
+            this.lblUnm.Size = new System.Drawing.Size(163, 36);
             this.lblUnm.TabIndex = 150;
             this.lblUnm.Text = "User Name";
             this.lblUnm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -116,9 +119,9 @@ namespace Robot_Operatioin
             this.lblPcPLCComm.AutoSize = true;
             this.lblPcPLCComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPcPLCComm.ForeColor = System.Drawing.Color.White;
-            this.lblPcPLCComm.Location = new System.Drawing.Point(436, 72);
+            this.lblPcPLCComm.Location = new System.Drawing.Point(388, 58);
             this.lblPcPLCComm.Name = "lblPcPLCComm";
-            this.lblPcPLCComm.Size = new System.Drawing.Size(501, 40);
+            this.lblPcPLCComm.Size = new System.Drawing.Size(411, 36);
             this.lblPcPLCComm.TabIndex = 578;
             this.lblPcPLCComm.Text = " PC <-> PLC Communication :";
             this.lblPcPLCComm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -129,11 +132,11 @@ namespace Robot_Operatioin
             this.lblManual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManual.ForeColor = System.Drawing.Color.White;
-            this.lblManual.Location = new System.Drawing.Point(497, 0);
+            this.lblManual.Location = new System.Drawing.Point(442, 0);
             this.lblManual.Margin = new System.Windows.Forms.Padding(0);
             this.lblManual.Name = "lblManual";
-            this.lblManual.Padding = new System.Windows.Forms.Padding(9);
-            this.lblManual.Size = new System.Drawing.Size(365, 73);
+            this.lblManual.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.lblManual.Size = new System.Drawing.Size(304, 60);
             this.lblManual.TabIndex = 2;
             this.lblManual.Text = "PRODUCTION";
             this.lblManual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,10 +147,10 @@ namespace Robot_Operatioin
             this.lblWelcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(12, 13);
-            this.lblWelcome.Margin = new System.Windows.Forms.Padding(10);
+            this.lblWelcome.Location = new System.Drawing.Point(11, 10);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(187, 40);
+            this.lblWelcome.Size = new System.Drawing.Size(154, 36);
             this.lblWelcome.TabIndex = 151;
             this.lblWelcome.Text = "Welcome :";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -158,33 +161,46 @@ namespace Robot_Operatioin
             this.lblAuthority.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblAuthority.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAuthority.ForeColor = System.Drawing.Color.White;
-            this.lblAuthority.Location = new System.Drawing.Point(12, 50);
+            this.lblAuthority.Location = new System.Drawing.Point(11, 40);
             this.lblAuthority.Name = "lblAuthority";
-            this.lblAuthority.Size = new System.Drawing.Size(179, 40);
+            this.lblAuthority.Size = new System.Drawing.Size(151, 36);
             this.lblAuthority.TabIndex = 152;
             this.lblAuthority.Text = "Authority :";
             this.lblAuthority.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(378, 160);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Location = new System.Drawing.Point(336, 128);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(733, 368);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(652, 294);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(58, 51);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 4;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 748);
+            this.ClientSize = new System.Drawing.Size(1156, 598);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,6 +218,7 @@ namespace Robot_Operatioin
         private System.Windows.Forms.Label lblAuthority;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
