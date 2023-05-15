@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
@@ -197,7 +198,7 @@ namespace Robot_Operatioin.BusinessLogic
                     byte[] data = new byte[SizeByte];
                     // txtReceiMsg.Text = Display(byteMsg); // Show received messages                    
                     Array.Copy(buffReceiver, 9, data, 0, data.Length);
-                    temp = Word.ConvertByteArrayToWordArray(data);
+                    //temp = Word.ConvertByteArrayToWordArray(data);
                 }
 
                 plc_data_read_status = "OK"; //ref plc_data_read_status return "OK" if no error
@@ -281,7 +282,7 @@ namespace Robot_Operatioin.BusinessLogic
                     //txtReceiMsg.Text = Display(byteMsg); // Show received messages
                     //string ReceiMsg = commuAuto.Display(byteMsg);// Show received messages
                     Array.Copy(buffReceiver, 9, data, 0, data.Length);
-                    temp = Word.ConvertByteArrayToWordArray(data);
+                    //temp = Word.ConvertByteArrayToWordArray(data);
                 }
 
                 plc_data_write_status = "OK"; //ref plc_data_write_status return "OK" if no error

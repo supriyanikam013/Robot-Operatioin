@@ -57,9 +57,30 @@ namespace Robot_Operatioin
         public static string loginUserName, loginUserID, loginUserPassword, LoginAuthorisation; // create shared variable to access all forms
         public static string settingDate, settingTime;
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                lblDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+                settingDate = lblDate.Text;
+                settingTime = lblTime.Text;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "timer1_Tick,frmHome", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void PRODUCTION_Load(object sender, EventArgs e)
         {
+            timer1.Interval = 1000;
+            timer1_Tick(null, null);
+            timer1.Start();
+            lblTime.Focus();
 
+            lblUnm.Text = frmLogin.loginUserName;
+            lblAuth.Text = frmLogin.LoginAuthorisation;
         }
 
 

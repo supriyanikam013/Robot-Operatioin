@@ -19,23 +19,20 @@ namespace Robot_Operatioin
         DataAccessLayer dal = new DataAccessLayer();
         public static frmProduction FormHome = new frmProduction();
         public static string loginUserName, loginUserID, loginUserPassword, LoginAuthorisation; // create shared variable to access all forms
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-
-        }
-
         MySqlConnection con = new MySqlConnection(ConfigurationManager.ConnectionStrings["conn"].ConnectionString);
 
         public frmLogin()
         {
             InitializeComponent();
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+     
+
+      
 
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -59,8 +56,8 @@ namespace Robot_Operatioin
 
 
                     this.Hide();
-                    FormHome.ShowDialog();
-
+                    frmProduction production = new frmProduction();
+                    production.ShowDialog();
                 }
                 else
                 {
