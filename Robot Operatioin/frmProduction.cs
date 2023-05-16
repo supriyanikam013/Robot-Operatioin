@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.IO.Ports;
@@ -48,8 +49,9 @@ namespace Robot_Operatioin
         Color passColor = Color.LimeGreen;
         Color failColor = Color.Crimson;
         Color notcheckedColor = Color.Khaki;
+        private PLC plc = null;
 
-        //private PlcComm = null;
+       // private PlcComm = null;
         private ExceptionCode errorState = ExceptionCode.ExceptionNo;
 
         public frmProduction()
@@ -80,40 +82,60 @@ namespace Robot_Operatioin
             timer1_Tick(null, null);
             timer1.Start();
             lblTime.Focus();
-            connectToPlc(IP);
+            // connectToPlc(IP);
+            ConnectToPlc();
             lblUnm.Text = frmLogin.loginUserName;
             lblAuth.Text = frmLogin.LoginAuthorisation;
+            #region-------- send pc datetime info to plc on every time  when form load  to set both  pc and plc time same------------
+
+
+            //DataType Datatyp = DataType.DataBlock;
+            //int dbb = 1;
+            //int startByteAdrr = 30;
+            //string[] StringDatetime = { DateTime.Now.Year.ToString(),
+            //                            DateTime.Now.Month.ToString(), DateTime.Now.Day.ToString(),
+            //                            week[DateTime.Now.DayOfWeek.ToString()].ToString(), DateTime.Now.Hour.ToString(),
+            //                            DateTime.Now.Minute.ToString() , DateTime.Now.Second.ToString()};
+
+            //byte[] retByte = finalByteArry(StringDatetime);  // convert string array data to byte array data using finalByteArry function
+
+
+            //x = plc.Write(Datatyp, dbb, startByteAdrr, retByte);  // send pc datetime to plc
+
+
+
+            #endregion
         }
 
-        private string connectToPlc( string IP)
-        {
-            string rslt = "";
-            try
-            {
-                rslt = PlcComm.Connect(IP);
-                // connect to Plc
+        //private string connectToPlc( string IP)
+        //{
+        //    string rslt = "";
+        //    try
+        //    {
+        //        rslt = PlcComm.Connect(IP);
+        //        // connect to Plc
 
-                if (errorState != ExceptionCode.ExceptionNo)
-                {
-                    lblCommunicationStatus.BackColor = Color.Red;
-                    //delay(1);
-                    //connectToPlc();             // It will Contineu execute until connection not established
-                }
-                else
-                {
-                    lblCommunicationStatus.BackColor = Color.Green;
-                }
-                return rslt;
-            }
-            catch (Exception ex)
-            {
-                lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
-                LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
-                //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                // connectToPlc(IP);
-                return rslt;
-            }
-        }
+        //        if (errorState != ExceptionCode.ExceptionNo)
+        //        {
+        //            lblCommunicationStatus.BackColor = Color.Red;
+        //            //delay(1);
+        //            //connectToPlc();             // It will Contineu execute until connection not established
+        //        }
+        //        else
+        //        {
+        //            lblCommunicationStatus.BackColor = Color.Green;
+        //        }
+        //        return rslt;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
+        //        LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
+        //        //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        // connectToPlc(IP);
+        //        return rslt;
+        //    }
+        //}
 
         public static void LogFileWrite(string message)
         {
@@ -173,46 +195,65 @@ namespace Robot_Operatioin
         }
 
 
-        //#region ------------Connect To PC---PLC using cpu type----------------
+        #region ------------Connect To PC---PLC using cpu type----------------
 
-        //public void connectToPlc()
-        //{
-        //    try
-        //    {
-        //        CPU_Type cpu = CPU_Type.S71200;  // Plc Model Name
-        //        //string ip = "200.200.200.200";   // Plc IP Address
-        //        string ip = IPAdrs;   // Plc IP Address
-        //        short rack = short.Parse("0");   // Plc Rack No
-        //        short slot = short.Parse("1");   // Plc Track No
-
-
-        //        plc = new PLC(cpu, ip, rack, slot);
-        //        errorState = plc.Open();           // connect to Plc
-
-        //        if (errorState != ExceptionCode.ExceptionNo)
-        //        {
-        //            txtPcPlcCommunication.BackColor = Color.Red;
-        //            delay(1);
-        //            connectToPlc();             // It will Contineu execute until connection not established
-        //        }
-        //        else
-        //        {
-        //            txtPcPlcCommunication.BackColor = Color.Green;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message, "connectToPlcError, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        connectToPlc();
-        //    }
-        //}
-        //#endregion
+        public void ConnectToPlc()
+        {
+            try
+            {
+                CPU_Type cpu = CPU_Type.S7400;  // Plc Model Name
+                //string ip = "200.200.200.200";   // Plc IP Address
+                string ip = IP;   // Plc IP Address
+                short rack = short.Parse("0");   // Plc Rack No
+                short slot = short.Parse("1");   // Plc Track No
 
 
+                plc = new PLC(cpu, ip, rack, slot);
+                errorState = plc.Open();           // connect to Plc
 
-        #region ------------Connect To PC---PLC----------------
+                if (errorState != ExceptionCode.ExceptionNo)
+                {
+                    lblPcPLCComm.BackColor = Color.Red;
+                    delay(1);
+                    ConnectToPlc();             // It will Contineu execute until connection not established
+                }
+                else
+                {
+                    lblPcPLCComm.BackColor = Color.Green;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "connectToPlcError, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ConnectToPlc();
+            }
+        }
+        #endregion
 
-        #endregion  
+        #region -----------------Delay Function-------------------------
+
+        public void delay(int tim)   // to use when control goes faster without executing some statments
+        {
+            try
+            {
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+                while (sw.ElapsedMilliseconds < tim)
+                {
+                    Application.DoEvents();
+                }
+                sw.Stop();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "delay frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+        #endregion
+
+
+      
 
 
 

@@ -65,5 +65,10 @@ namespace Robot_Operatioin
                 con.Close();
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
