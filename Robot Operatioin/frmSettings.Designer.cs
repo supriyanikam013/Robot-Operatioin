@@ -32,9 +32,10 @@ namespace Robot_Operatioin
             this.panelHeaderMaster = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPcPlcIpAddress = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
             this.button20 = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.panelHeaderMaster.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +68,8 @@ namespace Robot_Operatioin
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnupdate);
+            this.groupBox1.Controls.Add(this.txtPcPlcIpAddress);
             this.groupBox1.Controls.Add(this.label50);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
@@ -78,12 +80,12 @@ namespace Robot_Operatioin
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " PC <------> PLC";
             // 
-            // textBox1
+            // txtPcPlcIpAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(311, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(351, 44);
-            this.textBox1.TabIndex = 34;
+            this.txtPcPlcIpAddress.Location = new System.Drawing.Point(311, 160);
+            this.txtPcPlcIpAddress.Name = "txtPcPlcIpAddress";
+            this.txtPcPlcIpAddress.Size = new System.Drawing.Size(351, 44);
+            this.txtPcPlcIpAddress.TabIndex = 34;
             // 
             // label50
             // 
@@ -115,6 +117,29 @@ namespace Robot_Operatioin
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
+            // btnupdate
+            // 
+            this.btnupdate.AutoSize = true;
+            this.btnupdate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnupdate.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnupdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(42)))), ((int)(((byte)(62)))));
+            this.btnupdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(35)))), ((int)(((byte)(49)))));
+            this.btnupdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(66)))), ((int)(((byte)(103)))));
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnupdate.Location = new System.Drawing.Point(311, 257);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(20);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.btnupdate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnupdate.Size = new System.Drawing.Size(141, 61);
+            this.btnupdate.TabIndex = 585;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
             // frmSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -140,7 +165,8 @@ namespace Robot_Operatioin
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPcPlcIpAddress;
         private System.Windows.Forms.Button button20;
+        internal System.Windows.Forms.Button btnupdate;
     }
 }
