@@ -31,7 +31,7 @@ namespace Robot_Operatioin
 
         DeltaCommu PlcComm = new DeltaCommu();
         ushort[] result1 = { };
-        string IP;
+        string IP = "0.0.0.0";  // use IPAdress to connect to plc 
         ushort[] result2 = { };
         static string Del_NOK_data_Days = "";
         static string Report_send_to = "";
