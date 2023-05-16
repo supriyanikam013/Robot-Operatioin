@@ -237,6 +237,15 @@ namespace Robot_Operatioin.BusinessLogic
             }
         }
         #endregion
+
+
+        #region Read(string variable)
+     public object Read(string var)
+        {
+            return var;
+        }
+        #endregion
+
     }
 
 
