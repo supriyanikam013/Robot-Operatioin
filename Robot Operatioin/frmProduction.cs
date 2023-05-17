@@ -15,12 +15,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Robot_Operatioin.BusinessLogic;
 using static CYGNII_Operations_management.BusinessLogic.ApplicationLogic;
+using TwinCAT.Ads;
+
 
 namespace Robot_Operatioin
 {
     public partial class frmProduction : Form
     {
-
+        private TcAdsClient adsClient;
+        private int varhandle;
 
         //hp
         Thread t;      // create new thread
@@ -76,14 +79,19 @@ namespace Robot_Operatioin
             }
         }
 
+        private void label76_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void PRODUCTION_Load(object sender, EventArgs e)
         {
             timer1.Interval = 1000;
             timer1_Tick(null, null);
             timer1.Start();
             lblTime.Focus();
-            // connectToPlc(IP);
-            ConnectToPlc();
+             connectToPlc(IP);
+            //ConnectToPlc();
             lblUnm.Text = frmLogin.loginUserName;
             lblAuth.Text = frmLogin.LoginAuthorisation;
             #region-------- send pc datetime info to plc on every time  when form load  to set both  pc and plc time same------------
@@ -107,35 +115,35 @@ namespace Robot_Operatioin
             #endregion
         }
 
-        //private string connectToPlc( string IP)
-        //{
-        //    string rslt = "";
-        //    try
-        //    {
-        //        rslt = PlcComm.Connect(IP);
-        //        // connect to Plc
+        private string connectToPlc(string IP)
+        {
+            string rslt = "";
+            try
+            {
+                rslt = PlcComm.Connect(IP);
+                // connect to Plc
 
-        //        if (errorState != ExceptionCode.ExceptionNo)
-        //        {
-        //            lblCommunicationStatus.BackColor = Color.Red;
-        //            //delay(1);
-        //            //connectToPlc();             // It will Contineu execute until connection not established
-        //        }
-        //        else
-        //        {
-        //            lblCommunicationStatus.BackColor = Color.Green;
-        //        }
-        //        return rslt;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
-        //        LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
-        //        //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        // connectToPlc(IP);
-        //        return rslt;
-        //    }
-        //}
+                if (errorState != ExceptionCode.ExceptionNo)
+                {
+                    lblCommunicationStatus.BackColor = Color.Red;
+                    //delay(1);
+                    //connectToPlc();             // It will Contineu execute until connection not established
+                }
+                else
+                {
+                    lblCommunicationStatus.BackColor = Color.Green;
+                }
+                return rslt;
+            }
+            catch (Exception ex)
+            {
+                lblStatus.Text = ex.Message + " * Error In Function connectToPlc ,frmAuto * ";
+                LogFileWrite("connectToPlc,frmAuto : " + ex.Message);
+                //MessageBox.Show(ex.Message, "connectToPlc, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                // connectToPlc(IP);
+                return rslt;
+            }
+        }
 
         public static void LogFileWrite(string message)
         {
@@ -197,37 +205,37 @@ namespace Robot_Operatioin
 
         #region ------------Connect To PC---PLC using cpu type----------------
 
-        public void ConnectToPlc()
-        {
-            try
-            {
-                CPU_Type cpu = CPU_Type.S7400;  // Plc Model Name
-                //string ip = "200.200.200.200";   // Plc IP Address
-                string ip = IP;   // Plc IP Address
-                short rack = short.Parse("0");   // Plc Rack No
-                short slot = short.Parse("1");   // Plc Track No
+        //public void ConnectToPlc()
+        //{
+        //    try
+        //    {
+        //        CPU_Type cpu = CPU_Type.S7400;  // Plc Model Name
+        //        //string ip = "200.200.200.200";   // Plc IP Address
+        //        string ip = IP;   // Plc IP Address
+        //        short rack = short.Parse("0");   // Plc Rack No
+        //        short slot = short.Parse("1");   // Plc Track No
 
 
-                plc = new PLC(cpu, ip, rack, slot);
-                errorState = plc.Open();           // connect to Plc
+        //        plc = new PLC(cpu, ip, rack, slot);
+        //        errorState = plc.Open();           // connect to Plc
 
-                if (errorState != ExceptionCode.ExceptionNo)
-                {
-                    lblPcPLCComm.BackColor = Color.Red;
-                    delay(1);
-                    ConnectToPlc();             // It will Contineu execute until connection not established
-                }
-                else
-                {
-                    lblPcPLCComm.BackColor = Color.Green;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "connectToPlcError, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                ConnectToPlc();
-            }
-        }
+        //        if (errorState != ExceptionCode.ExceptionNo)
+        //        {
+        //            lblPcPLCComm.BackColor = Color.Red;
+        //            delay(1);
+        //            ConnectToPlc();             // It will Contineu execute until connection not established
+        //        }
+        //        else
+        //        {
+        //            lblPcPLCComm.BackColor = Color.Green;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message, "connectToPlcError, frmAuto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        ConnectToPlc();
+        //    }
+        //}
         #endregion
 
         #region -----------------Delay Function-------------------------

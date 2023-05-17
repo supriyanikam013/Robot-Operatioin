@@ -652,6 +652,7 @@ namespace Robot_Operatioin
             this.label76.TabIndex = 43;
             this.label76.Text = "Air Pressure";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label76.Click += new System.EventHandler(this.label76_Click);
             // 
             // label77
             // 
