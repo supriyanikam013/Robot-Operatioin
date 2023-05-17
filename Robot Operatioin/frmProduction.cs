@@ -94,6 +94,19 @@ namespace Robot_Operatioin
             //ConnectToPlc();
             lblUnm.Text = frmLogin.loginUserName;
             lblAuth.Text = frmLogin.LoginAuthorisation;
+            lblCommunicationStatus.BackColor = Color.Red;
+            try
+            {
+
+                adsClient.Connect(851);
+                varhandle = adsClient.CreateVariableHandle("MAIN.text");
+                lblCommunicationStatus.BackColor = Color.Green;
+                MessageBox.Show(" PLC is connected ! ");
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show($"Error: {err.Message}");
+            }
             #region-------- send pc datetime info to plc on every time  when form load  to set both  pc and plc time same------------
 
 
