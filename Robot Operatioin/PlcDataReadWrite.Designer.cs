@@ -108,7 +108,7 @@ namespace Robot_Operatioin
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(407, 258);
+            this.groupBox1.Size = new System.Drawing.Size(395, 246);
             this.groupBox1.TabIndex = 587;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -121,6 +121,7 @@ namespace Robot_Operatioin
             this.Controls.Add(this.groupBox1);
             this.Name = "PlcDataReadWrite";
             this.Text = "PlcDataReadWrite";
+            this.Load += new System.EventHandler(this.PlcDataReadWrite_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
