@@ -26,5 +26,10 @@ namespace Robot_Operatioin
             adsClient = new TcAdsClient();
             adsClient.Connect(851);
         }
+
+        private void btnread_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
